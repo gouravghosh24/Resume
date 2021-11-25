@@ -1,0 +1,3 @@
+function printFnc(){
+    window.print();
+};

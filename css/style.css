@@ -1,0 +1,134 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100&family=IBM+Plex+Sans:wght@100&display=swap");
+
+/*Colors*/
+:root {
+  --primary: #1a253f;
+  --dark: #151a33;
+  --secondary: #2b55cc;
+  --info: #4d79f6;
+  --ternary: #848db3;
+  --pure: #eff2f9;
+  --fade: #7081b9;
+  --mild: #8997bd;
+  --footer: #212a4a;
+  --black: #060b1b;
+  --twitter: #4ac7ec;
+  --dribble: #ff5da0;
+  --success: #1ecab8;
+  --danger: #f1646c;
+  --dark-blue: #28365f;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "IBM Plex Sans", "IBM Plex Sans KR";
+  background: var(--dark);
+  -webkit-font-smoothing: antialised;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.inner {
+  background: var(--primary);
+}
+.profile {
+  margin-top: -18px;
+}
+section.profile {
+  background: var(--pure);
+  display: flex;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+  padding-bottom: 3rem;
+}
+section.profile .left {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+section.profile .left h2 {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+section.profile .left p {
+  color: var(--dribble);
+  font-size: 12px;
+}
+section.profile .left img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+section.profile .left .avatar_block {
+  position: relative;
+  margin-right: 2rem;
+}
+section.profile .left .avatar_block span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--info);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pure);
+  box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0.05);
+  cursor: pointer;
+}
+section.profile .right ul.contact {
+  list-style-type: none;
+  margin: 1.6rem;
+}
+
+section.profile .right ul.contact li {
+  color: var(--dark-blue);
+  margin-bottom: 0.7rem;
+  font-size: 14px;
+}
+section.profile .right ul.contact li i {
+  font-size: 18px;
+  margin-right: 0.3rem;
+}
+section.profile .right ul.social {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 22px;
+}
+section.profile .right ul.social li a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--pure);
+  line-height: 36px;
+  text-align: center;
+}
+section.profile .right ul.social li {
+  margin-right: 0.8rem;
+}
+section.profile .right ul.social li:nth-child(1) a {
+  background: var(--secondary);
+}
+section.profile .right ul.social li:nth-child(2) a {
+  background: var(--twitter);
+}
+section.profile .right ul.social li:nth-child(3) a {
+  background: var(--primary);
+}
